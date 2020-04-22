@@ -1,4 +1,5 @@
-[{"-M5QT0ZAB4dpnpYIDXcj" : {
+{
+        "-M5QT0ZAB4dpnpYIDXcj" : {
         "appver" : "2",
         "des" : "[Update LOG]\n(0.1 Beta)\n*Release\n(1.0 Release)\n*Added 10 BGM\n*Deleted Korean Version",
         "dev" : "Blackcats4567",
@@ -8,4 +9,5 @@
         "title" : "Youtube BGM list (1.0)",
         "type" : "1",
         "uploader" : "lee25802733@gmail.com"
-      }]
+      }
+}
