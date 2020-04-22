@@ -1,1 +1,2 @@
-◆ 이상한 콘텐츠나 규칙에 어긋나는 프로젝트는 제제대상입니다. ◆ 처음 어길 경우, 프로젝트가 가려지며, 계속 어길 경우 계정이 정지됩니다.
+If the block appears as Unknown Block, update the app and try again.
+블럭이 Unknown Block 으로 보인다면, 앱을 업데이트 하고 다시 시도하세요
