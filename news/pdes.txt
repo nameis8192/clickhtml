@@ -1,2 +1,1 @@
-If the block appears as Unknown Block, update the app and try again.
-블럭이 Unknown Block 으로 보인다면, 앱을 업데이트 하고 다시 시도하세요
+These are blocks that added in 1.7
