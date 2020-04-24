@@ -1,3 +1,7 @@
-안녕하세요! 서버에 밴 기능이 추가되었습니다. 이제 밴당할때 사유도 알 수 있습니다!
-밴당할때 앱을 제거시 영구적으로 밴처리되며 밴해제처리는 안된다는걸 알려드립니다!
-께끗한 앱을 만들어 갑시다!
+The block added by the developer may inadvertently touch the existing
+text addition block inadvertently while being developed by the developer.
+Create and copy new text blocks.
+We are sorry for the inconvenience.
+
+개발자가 개발하다 실수로 기존 텍스트 추가블럭을 잘못 건드려서 기존에 추가한 블럭은 복사 등에서 충돌이 일어날 수 있습니다.
+새로운 텍스트 추가 블럭을 만들고 복사하여 사용하십시오. 불편을 끼쳐드려 죄송합니다.
