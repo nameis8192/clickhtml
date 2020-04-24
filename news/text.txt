@@ -2,6 +2,8 @@ The block added by the developer may inadvertently touch the existing
 text addition block inadvertently while being developed by the developer.
 Create and copy new text blocks.
 We are sorry for the inconvenience.
++ Blocks added in 1.7 are listed in the attached file.
 
 개발자가 개발하다 실수로 기존 텍스트 추가블럭을 잘못 건드려서 기존에 추가한 블럭은 복사 등에서 충돌이 일어날 수 있습니다.
 새로운 텍스트 추가 블럭을 만들고 복사하여 사용하십시오. 불편을 끼쳐드려 죄송합니다.
++ 첨부파일에는 1.7에 추가된 블럭들이 나열되어 있습니다.
