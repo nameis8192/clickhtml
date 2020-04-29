@@ -1,1265 +1,471 @@
 
 <!doctype html>
-<html       lang="en"      dir="ltr">
+<html lang="en"      dir="ltr">
   <head>
-    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
-    <meta name="google-signin-scope"
-          content="profile email">
-    <meta property="og:site_name" content="Google Developers">
-    <meta property="og:type" content="website">
-    
-          <meta name="theme-color" content="#12b5cb">
-    
+    <title>Google Developers</title>
+    <meta name="robots" content="noindex">
     <meta charset="utf-8">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="/_pwa/developers/manifest.json"
-          crossorigin="use-credentials">
-    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
-    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
-          <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosanskr.css">
-        <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/developers/css/app.css">
-    <noscript>
-      <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/developers/css/ce_bundle.css">
-    </noscript>
-    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/developers/images/favicon.png">
-    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.com/blockly?hl=ko"><link rel="search" type="application/opensearchdescription+xml"
-            title="Google Developers" href="https://developers.google.com/s/opensearch.xml">      
-<title>Blockly &nbsp;|&nbsp; Google Developers</title>
-
-<meta property="og:title" content="Blockly &nbsp;|&nbsp; Google Developers">
-  <meta name="description" content="A JavaScript library for building visual programming editors.">
-  <meta property="og:description" content="A JavaScript library for building visual programming editors.">
-
-  
-  <meta property="og:url" content="https://developers.google.com/blockly?hl=ko">
-
-  <meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/developers/images/opengraph/cyan.png">
-  <meta property="og:image:secure_url" content="https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/developers/images/opengraph/cyan.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="675">
-  <meta property="og:locale" content="en">
-  <meta name="twitter:card" content="summary_large_image">
-
-
-
-    <meta name="xsrf_token" content="ENkgLTQfEXFeZKUK5IvsowPCEbW6fTJNF5yTbkT6KKM6MTU4ODEyMDU1ODE1NDk2NA" />
-  
-
-
-    </head>
-  <body type="landing"
-        theme="cyan"
-        class=""
-        
-        layout="full"
-                        pending>
-    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
-    <section class="devsite-wrapper"><devsite-header>
-      
-
-
-
-
-
-
-
-<div class="devsite-header--inner">
-  <div class="devsite-top-logo-row-wrapper-wrapper">
-    <div class="devsite-top-logo-row-wrapper">
-      <div class="devsite-top-logo-row">
-        <button type="button" id="devsite-hamburger-menu"
-          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
-          data-category="Site-Wide Custom Events"
-          data-label="Navigation menu button"
-          visually-hidden
-          aria-label="Open menu">
-        </button>
-        <div class="devsite-product-name-wrapper">
-      
-  
-  <span class="devsite-product-name">
-    <ul class="devsite-breadcrumb-list">
-    <li class="devsite-breadcrumb-item
-             ">
-                                  <a href="/blockly"              class="devsite-breadcrumb-link gc-analytics-event"
-              data-category="Site-Wide Custom Events"
-              data-label="Upper Header"
-              data-value="1"
-          >
-              <h1 class="devsite-product-name">Blockly</h1>        
-  </a>
-              </li>
-  </ul>
-  </span>
-</div>
-        <div class="devsite-top-logo-row-middle">
-          <div class="devsite-header-upper-tabs">
-                       </div>
-          <devsite-search
-    enable-signin    enable-search    enable-suggestions
-      enable-query-completion        project-name="Blockly"    tenant-name="Google Developers"    project-scope="/blockly"    url-scoped="https://developers.google.com/s/results/blockly"        >
-  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
-    <div class="devsite-search-container">
-      <div class="devsite-searchbox">
-                <input placeholder="검색"
-          type="text"
-          class="devsite-search-field devsite-search-query"
-          name="q"
-          value=""
-          autocomplete="off"
-                    aria-label="검색창">
-        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
-      </div>
-      <button type="button"
-              search-open
-              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
-              aria-label="Open search box"></button>
-    </div>
-  </form>
-  <button type="button"
-          search-close
-          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
-          aria-label="Close search box"></button>
-</devsite-search>
-
-        </div>
-
-        
-        <devsite-language-selector>
-  <devsite-select class="devsite-language-selector-menu">
-    <select class="devsite-language-selector-select"
-            name="language"
-            track-name="click"
-            track-type="languageSelector">
-              <option value="id"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="id"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        Bahasa Indonesia
-      </option>
-          <option value="de"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="de"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        Deutsch
-      </option>
-          <option value="en"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="en"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        English
-      </option>
-          <option value="es"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="es"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        Español
-      </option>
-          <option value="fr"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="fr"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        Français
-      </option>
-          <option value="pt_br"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="pt_br"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        Português – Brasil
-      </option>
-          <option value="ru"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="ru"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        Русский
-      </option>
-          <option value="zh_cn"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="zh_cn"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        中文 – 简体
-      </option>
-          <option value="ja"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="ja"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        日本語
-      </option>
-          <option value="ko"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="ko"
-              track-name="changed"
-              track-type="languageSelector"
-                          selected="selected"
-            >
-        한국어
-      </option>
-        </select>
-  </devsite-select>
-</devsite-language-selector>
-
-
-        
-                                      <devsite-user signed-in                                                
-                        id="devsite-user"></devsite-user>
-                         </div>    </div>  </div>
-  <div class="devsite-collapsible-section
-    ">
-    <div class="devsite-header-background">
-                        <div class="devsite-product-id-row"
-           >
-            <div class="devsite-product-description-row">
-                                                                            <div class="devsite-product-description">A JavaScript library for building visual programming editors.</div>
-  
-                          </div>
-                      </div>
-                                      <div class="devsite-doc-set-nav-row">
-                                  <devsite-tabs class="lower-tabs">
-    <div class="devsite-tabs-wrapper">
-                        <tab  active>
-            <a href="/blockly"
-   class="gc-analytics-event"
-   track-type="globalNav"
-   track-metadata-position="nav"
-   track-metadata-eventdetail="nav"
-   track-name="홈"
-   aria-label="홈, selected"         data-category="Site-Wide Custom Events"
-        data-label="Tab: 홈"
-   >
-  홈
-</a>
-
-          </tab>
-                                <tab  >
-            <a href="/blockly/guides/overview"
-   class="gc-analytics-event"
-   track-type="globalNav"
-   track-metadata-position="nav"
-   track-metadata-eventdetail="nav"
-   track-name="안내"
-           data-category="Site-Wide Custom Events"
-        data-label="Tab: 안내"
-   >
-  안내
-</a>
-
-          </tab>
-                                <tab  >
-            <a href="/blockly/reference/overview"
-   class="gc-analytics-event"
-   track-type="globalNav"
-   track-metadata-position="nav"
-   track-metadata-eventdetail="nav"
-   track-name="참조"
-           data-category="Site-Wide Custom Events"
-        data-label="Tab: 참조"
-   >
-  참조
-</a>
-
-          </tab>
-                                <tab  >
-            <a href="https://blockly-demo.appspot.com/static/demos/index.html"
-   class="gc-analytics-event"
-   track-type="globalNav"
-   track-metadata-position="nav"
-   track-metadata-eventdetail="nav"
-   track-name="샘플"
-           data-category="Site-Wide Custom Events"
-        data-label="Tab: 샘플"
-   >
-  샘플
-</a>
-
-          </tab>
-                                <tab  >
-            <a href="https://groups.google.com/forum/#!forum/blockly"
-   class="gc-analytics-event"
-   track-type="globalNav"
-   track-metadata-position="nav"
-   track-metadata-eventdetail="nav"
-   track-name="지원"
-           data-category="Site-Wide Custom Events"
-        data-label="Tab: 지원"
-   >
-  지원
-</a>
-
-          </tab>
-                                <tab  >
-            <a href="/blockly/publications/publications"
-   class="gc-analytics-event"
-   track-type="globalNav"
-   track-metadata-position="nav"
-   track-metadata-eventdetail="nav"
-   track-name="publications"
-           data-category="Site-Wide Custom Events"
-        data-label="Tab: Publications"
-   >
-  Publications
-</a>
-
-          </tab>
-                  </div>
-  </devsite-tabs>
-
-                            </div>
-          </div>  </div></div>
-
-  </devsite-header>      <devsite-book-nav scrollbars hidden>
-                  
-
-
-
-
-
-<nav class="devsite-book-nav devsite-nav nocontent">
-  <div class="devsite-mobile-header">
-    <button type="button"
-            id="devsite-close-nav"
-            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
-            data-category="Site-Wide Custom Events"
-            data-label="Close navigation"
-            aria-label="Close navigation">
-    </button>
-    <div class="devsite-product-name-wrapper">
-      
-          <span class="devsite-product-name">
-        <ul class="devsite-breadcrumb-list">
-    <li class="devsite-breadcrumb-item
-             ">
-                                  <a href="/blockly"              class="devsite-breadcrumb-link gc-analytics-event"
-              data-category="Site-Wide Custom Events"
-              data-label="Upper Header"
-              data-value="1"
-          >
-              <h1 class="devsite-product-name">Blockly</h1>        
-  </a>
-              </li>
-  </ul>
-      </span>
-    
-</div>  </div>
-
-  <div class="devsite-book-nav-wrapper">
-    <div class="devsite-mobile-nav-top">
-              <ul class="devsite-nav-list">
-                      <li class="devsite-nav-item">
-    <a href="/blockly"
-           class="devsite-nav-title gc-analytics-event
-                            devsite-nav-active"
-    
-         data-category="Site-Wide Custom Events"
-     data-label="Responsive Tab: 홈"
-     track-type="navMenu"
-     track-metadata-eventDetail="globalMenu"
-     track-metadata-position="nav"
-     track-name="홈">
-      <span class="devsite-nav-text" tooltip >
-      홈
-   </span>
-        </a>
-  </li>
-
-                      <li class="devsite-nav-item">
-    <a href="/blockly/guides/overview"
-           class="devsite-nav-title gc-analytics-event
-              devsite-nav-has-children              "
-    
-         data-category="Site-Wide Custom Events"
-     data-label="Responsive Tab: 안내"
-     track-type="navMenu"
-     track-metadata-eventDetail="globalMenu"
-     track-metadata-position="nav"
-     track-name="안내">
-      <span class="devsite-nav-text" tooltip >
-      안내
-   </span>
-        <span class="devsite-nav-icon material-icons" data-icon="forward"
-          >
-    </span>
-        </a>
-  </li>
-
-                      <li class="devsite-nav-item">
-    <a href="/blockly/reference/overview"
-           class="devsite-nav-title gc-analytics-event
-              devsite-nav-has-children              "
-    
-         data-category="Site-Wide Custom Events"
-     data-label="Responsive Tab: 참조"
-     track-type="navMenu"
-     track-metadata-eventDetail="globalMenu"
-     track-metadata-position="nav"
-     track-name="참조">
-      <span class="devsite-nav-text" tooltip >
-      참조
-   </span>
-        <span class="devsite-nav-icon material-icons" data-icon="forward"
-          >
-    </span>
-        </a>
-  </li>
-
-                      <li class="devsite-nav-item">
-    <a href="https://blockly-demo.appspot.com/static/demos/index.html"
-           class="devsite-nav-title gc-analytics-event
-                            "
-    
-         data-category="Site-Wide Custom Events"
-     data-label="Responsive Tab: 샘플"
-     track-type="navMenu"
-     track-metadata-eventDetail="globalMenu"
-     track-metadata-position="nav"
-     track-name="샘플">
-      <span class="devsite-nav-text" tooltip >
-      샘플
-   </span>
-        </a>
-  </li>
-
-                      <li class="devsite-nav-item">
-    <a href="https://groups.google.com/forum/#!forum/blockly"
-           class="devsite-nav-title gc-analytics-event
-                            "
-    
-         data-category="Site-Wide Custom Events"
-     data-label="Responsive Tab: 지원"
-     track-type="navMenu"
-     track-metadata-eventDetail="globalMenu"
-     track-metadata-position="nav"
-     track-name="지원">
-      <span class="devsite-nav-text" tooltip >
-      지원
-   </span>
-        </a>
-  </li>
-
-                      <li class="devsite-nav-item">
-    <a href="/blockly/publications/publications"
-           class="devsite-nav-title gc-analytics-event
-                            "
-    
-         data-category="Site-Wide Custom Events"
-     data-label="Responsive Tab: Publications"
-     track-type="navMenu"
-     track-metadata-eventDetail="globalMenu"
-     track-metadata-position="nav"
-     track-name="publications">
-      <span class="devsite-nav-text" tooltip >
-      Publications
-   </span>
-        </a>
-  </li>
-
-                    
-                  </ul>
-          </div>
-      </div>
-</nav>
-              </devsite-book-nav>
-      <section id="gc-wrapper">
-        <main role="main" class="devsite-main-content"
-                        >
-          <devsite-toc class="devsite-nav"
-            disabled></devsite-toc>
-          <devsite-content>
-                          
-
-<article class="devsite-article">
-  <article class="devsite-article-inner"><style>
-        /* Styles inlined from /blockly/styles/landing.css */
-/* blockly demo */
-
-@media only screen and (max-width: 799px) {
-  #desktop-demo-div {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  #mobile-demo-div {
-    display: none;
-  }
-}
-
-#mobile-demo-div {
-  height: auto;
-}
-
-.half-width {
-  width: calc((100% - 40px)/2);
-  float: none !important;
-}
-
-.framed-demo {
-  display: block;
-  width: calc(100% - 44px);
-  height: calc((100vw - 304px)*9/16);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 22px;
-  margin-bottom: 22px;
-  max-width: 960px;
-  max-height: 540px;
-}
-
-.framed-carousel {
-  display: block;
-  width: 100%;
-  height: 95px;
-}
-
-.short-header {
-  margin-bottom: 22px !important;
-}
-
-.tall-header {
-  margin-top: 43px !important;
-  margin-bottom: 20px !important;
-}
-
-/* icon position */
-
-.baseline-fix {
-  position: relative;
-  line-height: 16px;
-  top: 6px;
-}
-
-        </style>        
-    <div class="devsite-article-meta">
-      <ul class="devsite-breadcrumb-list">
-    <li class="devsite-breadcrumb-item
-             ">
-                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
-              data-category="Site-Wide Custom Events"
-              data-label="Breadcrumbs"
-              data-value="1"
-          >
-            홈
-      
-  </a>
-        </li>
-    <li class="devsite-breadcrumb-item
-             ">
-                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
-                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
-              data-category="Site-Wide Custom Events"
-              data-label="Breadcrumbs"
-              data-value="2"
-          >
-            제품
-      
-  </a>
-        </li>
-    <li class="devsite-breadcrumb-item
-             ">
-                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
-                    <a href="/edu"              class="devsite-breadcrumb-link gc-analytics-event"
-              data-category="Site-Wide Custom Events"
-              data-label="Breadcrumbs"
-              data-value="3"
-          >
-            Google for Education
-      
-  </a>
-        </li>
-    <li class="devsite-breadcrumb-item
-             ">
-                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
-                    <a href="/blockly"              class="devsite-breadcrumb-link gc-analytics-event"
-              data-category="Site-Wide Custom Events"
-              data-label="Breadcrumbs"
-              data-value="4"
-          >
-            Blockly
-      
-  </a>
-        </li>
-  </ul>
-          </div>
-
-        
-    <devsite-toc class="devsite-nav" devsite-toc-embedded
-                 disabled>
-    </devsite-toc>
-
-    <div class="devsite-article-body clearfix
-      devsite-no-page-title"
-            >
-
-                <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-100 devsite-landing-row-large-headings short-header"
-           
-           >
-
-      
-    
-      <div class="devsite-landing-row-group">
-              <div class="devsite-landing-row-item"
-     
-     >
-
-      <div id="desktop-demo-div">
-  <h2 id="try-blockly" class="short-header" data-text="Try Blockly" tabindex="0">Try Blockly</h2>
-  <iframe src="/blockly/blockly-demo/blockly-demo" class="framed-demo" scrolling="no"></iframe>
-</div> <div id="mobile-demo-div">
-  <h2 id="blockly-basics" data-text="Blockly Basics" tabindex="0">Blockly Basics</h2>
-  <img src="/blockly/images/BlocklyDemoImage.png" class="devsite-landing-row-item-image">
-  <div class="devsite-landing-row-item-description half-width">
-    <p>The Blockly library adds an editor to your app that represents coding concepts as interlocking blocks. Blockly generates simple, syntactically-correct code from the blocks in the editor, which your app can use to run games, control robots, or do anything else your imagination can concieve.</p>
-  </div>
-</div> <div>
-  The Blockly library adds an editor to your app that represents coding concepts as interlocking blocks.
-  It outputs syntactically correct code in the programming language of your choice.
-  Custom blocks may be created to connect to your own application.
-</div> <div class="devsite-landing-row-item-buttons"><a href="/blockly/guides/overview" class="button button-white">
-  Learn more
-</a></div>
-
-  
-</div>
-            </div>
-    
-  
-  </section>
-  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-100 devsite-landing-row-large-headings short-header"
-           
-           >
-
-      
-    
-      <div class="devsite-landing-row-group">
-              <div class="devsite-landing-row-item"
-     
-     >
-
-      <div id="carousel-div">
-  <h2 id="built-with-blockly" class="tall-header" data-text="Built with Blockly" tabindex="0">Built with Blockly</h2>
-  <p>Blockly is being used by hundreds of projects, most of them educational:</p>
-  <iframe src="/blockly/showcase/carousel" class="framed-carousel"></iframe>
-</div>
-
-  
-</div>
-            </div>
-    
-  
-  </section>
-  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-50 devsite-landing-row-large-headings"
-           
-           >
-
-          <header class="devsite-landing-row-header">
-            <div class="devsite-landing-row-header-text">
-
-                    <h2 id="blockly-for-web" data-text="Blockly for Web">
-      Blockly for Web</h2>
-    
-    
-
-              </div>
-      
-          </header>
-    
-    
-      <div class="devsite-landing-row-group">
-              <div class="devsite-landing-row-item"
-     
-     >
-
-  
-    <div class="devsite-landing-row-item-media
-            ">
-      <figure class="devsite-landing-row-item-image">
-          <img alt=""
-       src="/blockly/images/browser-mac-web-maze.png"
-       srcset="https://developers.google.com/blockly/images/browser-mac-web-maze_36.png 36w,https://developers.google.com/blockly/images/browser-mac-web-maze_48.png 48w,https://developers.google.com/blockly/images/browser-mac-web-maze_72.png 72w,https://developers.google.com/blockly/images/browser-mac-web-maze_96.png 96w,https://developers.google.com/blockly/images/browser-mac-web-maze_480.png 480w,https://developers.google.com/blockly/images/browser-mac-web-maze_720.png 720w,https://developers.google.com/blockly/images/browser-mac-web-maze_856.png 856w,https://developers.google.com/blockly/images/browser-mac-web-maze_960.png 960w,https://developers.google.com/blockly/images/browser-mac-web-maze_1440.png 1440w,https://developers.google.com/blockly/images/browser-mac-web-maze_1920.png 1920w,https://developers.google.com/blockly/images/browser-mac-web-maze_2880.png 2880w"
-       sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px">
-  
-  </figure>
-  </div>
-
-
-        <div class="devsite-landing-row-item-description"
-         >
-
-      
-
-      <div class="devsite-landing-row-item-body">
-        
-        
-
-                  <div class="devsite-landing-row-item-description-content">
-            <p>Blockly in a browser allows web pages to include a visual code editor for any of Blockly's five supported programming languages, or your own. In Blockly Games, pictured here, users can solve a maze using Blockly's editor on the right.</p> <p>Blockly is...</p> <ul>
-  <li>Pure JavaScript library.</li>
-  <li>100% client side. No server side dependencies.</li>
-  <li>Compatible with all major browsers: Chrome, Firefox, Safari,
-  Opera, and IE.</li>
-  <li>Highly customizable and extensible.</li>
-</ul>
-
-          </div>
-        
-        
-                  <div class="devsite-landing-row-item-buttons">
-      <a href="/blockly/guides/get-started/web"
-            class="button             button-white             "
-            >Get started</a></div>
-              </div>
-    </div>
-      
-</div>
-            </div>
-    
-  
-  </section>
-  <section class="devsite-landing-row devsite-landing-row-3-up devsite-landing-row-cards"
-           
-           >
-
-      
-    
-      <div class="devsite-landing-row-group">
-              <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
-     
-     >
-
-  
-    
-
-        <div class="devsite-landing-row-item-description"
-             icon-position="top"
-  >
-
-              <div class="devsite-landing-row-item-icon-container"
-       
-       >
-      <div class="devsite-landing-row-item-icon material-icons" aria-hidden="true">
-      extension
-    </div>
-    </div>
-  
-  
-
-      <div class="devsite-landing-row-item-body">
-        
-                    <h3 id="plugins" data-text="Plugins">
-      Plugins</h3>
-    
-    
-
-                  <div class="devsite-landing-row-item-description-content">
-            <p>Blockly plugins are self-contained pieces of code that add functionality to Blockly.<p> <p>Plugins can add fields, define themes, create renderers, and much more.<p>
-
-          </div>
-        
-        
-                  <div class="devsite-landing-row-item-buttons">
-      <a href="https://github.com/google/blockly-samples/tree/master/plugins"
-      class="button
-      "
-            >Explore plugins</a></div>
-              </div>
-    </div>
-      
-</div>
-              <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
-     
-     >
-
-  
-    
-
-        <div class="devsite-landing-row-item-description"
-             icon-position="top"
-  >
-
-              <div class="devsite-landing-row-item-icon-container"
-       
-       >
-      <div class="devsite-landing-row-item-icon material-icons" aria-hidden="true">
-      list
-    </div>
-    </div>
-  
-  
-
-      <div class="devsite-landing-row-item-body">
-        
-                    <h3 id="codelabs" data-text="Codelabs">
-      Codelabs</h3>
-    
-    
-
-                  <div class="devsite-landing-row-item-description-content">
-            Blockly codelabs provide step-by-step instructions on how to use and customize Blockly.
-
-          </div>
-        
-        
-                  <div class="devsite-landing-row-item-buttons">
-      <a href="https://blocklycodelabs.dev"
-      class="button
-      "
-            >Explore codelabs</a></div>
-              </div>
-    </div>
-      
-</div>
-              <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
-     
-     >
-
-  
-    
-
-        <div class="devsite-landing-row-item-description"
-             icon-position="top"
-  >
-
-              <div class="devsite-landing-row-item-icon-container"
-       
-       >
-      <div class="devsite-landing-row-item-icon material-icons" aria-hidden="true">
-      code
-    </div>
-    </div>
-  
-  
-
-      <div class="devsite-landing-row-item-body">
-        
-                    <h3 id="examples" data-text="Examples">
-      Examples</h3>
-    
-    
-
-                  <div class="devsite-landing-row-item-description-content">
-            Sample projects that show how to use many of Blockly's features.
-
-          </div>
-        
-        
-                  <div class="devsite-landing-row-item-buttons">
-      <a href="https://github.com/google/blockly-samples/tree/master/examples"
-      class="button
-      "
-            >Explore samples</a></div>
-              </div>
-    </div>
-      
-</div>
-            </div>
-    
-  
-  </section>
-
-          </div>
-
-    
-    
-          </article>
-</article>
-
-
-
-
-                      </devsite-content>
-        </main>
-        <devsite-footer-promos class="devsite-footer">
-                      
-                  </devsite-footer-promos>
-        <devsite-footer-linkboxes class="devsite-footer">
-                      <nav class="devsite-footer-linkboxes nocontent">
-    <ul class="devsite-footer-linkboxes-list">
-        <li class="devsite-footer-linkbox ">
-    <h3 class="devsite-footer-linkbox-heading">연결</h3>      <ul class="devsite-footer-linkbox-list">
-                <li class="devsite-footer-linkbox-item">
-                    <a href="//developers-kr.googleblog.com"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 1)"            >
-                      블로그
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="//www.facebook.com/Google-Developers-967415219957038"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 2)"            >
-                      Facebook
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="//medium.com/google-developers"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 3)"            >
-                      Medium
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="//twitter.com/googledevs"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 4)"            >
-                      Twitter
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="//www.youtube.com/user/GoogleDevelopers"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 5)"            >
-                      YouTube
-                    </a>
-                  </li>
-              </ul>
-    </li>
-        <li class="devsite-footer-linkbox ">
-    <h3 class="devsite-footer-linkbox-heading">프로그램</h3>      <ul class="devsite-footer-linkbox-list">
-                <li class="devsite-footer-linkbox-item">
-                    <a href="//www.womentechmakers.com"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 1)"            >
-                      Women Techmakers
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="/community/gbg"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 2)"            >
-                      Google Business Groups
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="/community/gdg"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 3)"            >
-                      Google Developer Groups
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="/community/experts"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 4)"            >
-                      Google Developers Experts
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="/community/accelerators"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 5)"            >
-                      Accelerators
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="/community/dsc"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 6)"            >
-                      Developer Student Clubs
-                    </a>
-                  </li>
-              </ul>
-    </li>
-        <li class="devsite-footer-linkbox ">
-    <h3 class="devsite-footer-linkbox-heading">개발자 콘솔</h3>      <ul class="devsite-footer-linkbox-list">
-                <li class="devsite-footer-linkbox-item">
-                    <a href="//console.developers.google.com"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 1)"            >
-                      Google API Console
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="//console.cloud.google.com"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 2)"            >
-                      Google Cloud Platform Console
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="//play.google.com/apps/publish"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 3)"            >
-                      Google Play Console
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="//console.firebase.google.com"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 4)"            >
-                      Firebase Console
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="//console.actions.google.com"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 5)"            >
-                      Actions on Google Console
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="//cast.google.com/publish"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 6)"            >
-                      Cast SDK Developer Console
-                    </a>
-                  </li>
-                <li class="devsite-footer-linkbox-item">
-                    <a href="//chrome.google.com/webstore/developer/dashboard"
-             class="devsite-footer-linkbox-link gc-analytics-event"
-             data-category="Site-Wide Custom Events"
-                         data-label="Footer Link (index 7)"            >
-                      Chrome Web Store Dashboard
-                    </a>
-                  </li>
-              </ul>
-    </li>
-      </ul>
-  </nav>
-                  </devsite-footer-linkboxes>
-        <devsite-footer-utility class="devsite-footer">
-                      
-<div class="devsite-footer-utility nocontent">
-    <nav class="devsite-footer-sites">
-    <a href="https://developers.google.com/"
-       class="devsite-footer-sites-logo-link gc-analytics-event"
-       data-category="Site-Wide Custom Events"
-       data-label="Footer Google Developers Link">
-      <img class="devsite-footer-sites-logo"
-           src="/_static/images/lockup-developers.svg"
-           alt="Google Developers">
-    </a>
-    <ul class="devsite-footer-sites-list">
-            <li class="devsite-footer-sites-item">
-        <a href="//developer.android.com"
-           class="devsite-footer-sites-link
-                  gc-analytics-event"
-           data-category="Site-Wide Custom Events"
-                    data-label="Footer Android Link"
-                  >
-          Android
-        </a>
-      </li>
-            <li class="devsite-footer-sites-item">
-        <a href="//developer.chrome.com/home"
-           class="devsite-footer-sites-link
-                  gc-analytics-event"
-           data-category="Site-Wide Custom Events"
-                    data-label="Footer Chrome Link"
-                  >
-          Chrome
-        </a>
-      </li>
-            <li class="devsite-footer-sites-item">
-        <a href="//firebase.google.com"
-           class="devsite-footer-sites-link
-                  gc-analytics-event"
-           data-category="Site-Wide Custom Events"
-                    data-label="Footer Firebase Link"
-                  >
-          Firebase
-        </a>
-      </li>
-            <li class="devsite-footer-sites-item">
-        <a href="//cloud.google.com"
-           class="devsite-footer-sites-link
-                  gc-analytics-event"
-           data-category="Site-Wide Custom Events"
-                    data-label="Footer Google Cloud Platform Link"
-                  >
-          Google Cloud Platform
-        </a>
-      </li>
-            <li class="devsite-footer-sites-item">
-        <a href="/products"
-           class="devsite-footer-sites-link
-                  gc-analytics-event"
-           data-category="Site-Wide Custom Events"
-                    data-label="Footer All products Link"
-                  >
-          모든 제품
-        </a>
-      </li>
-          </ul>
-  </nav>
-  
-  <nav class="devsite-footer-utility-links">
-        <ul class="devsite-footer-utility-list">
-            <li class="devsite-footer-utility-item
-                 ">
-                        <a class="devsite-footer-utility-link gc-analytics-event"
-           href="/terms/site-terms"
-           data-category="Site-Wide Custom Events"
-           data-label="Footer Terms link"
-         >
-          약관
-        </a>
-              </li>
-            <li class="devsite-footer-utility-item
-                 ">
-                        <a class="devsite-footer-utility-link gc-analytics-event"
-           href="//policies.google.com/privacy"
-           data-category="Site-Wide Custom Events"
-           data-label="Footer Privacy link"
-         >
-          개인정보 보호
-        </a>
-              </li>
-            <li class="devsite-footer-utility-item
-                 devsite-footer-utility-button">
-                <span class="devsite-footer-utility-description">Google Developers 뉴스레터 구독하기</span>
-                        <a class="devsite-footer-utility-link gc-analytics-event"
-           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
-           data-category="Site-Wide Custom Events"
-           data-label="Footer Subscribe link"
-         >
-          구독
-        </a>
-              </li>
-          </ul>
-    
-    <devsite-language-selector>
-  <devsite-select class="devsite-language-selector-menu">
-    <select class="devsite-language-selector-select"
-            name="language"
-            track-name="click"
-            track-type="languageSelector">
-              <option value="id"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="id"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        Bahasa Indonesia
-      </option>
-          <option value="de"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="de"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        Deutsch
-      </option>
-          <option value="en"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="en"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        English
-      </option>
-          <option value="es"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="es"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        Español
-      </option>
-          <option value="fr"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="fr"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        Français
-      </option>
-          <option value="pt_br"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="pt_br"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        Português – Brasil
-      </option>
-          <option value="ru"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="ru"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        Русский
-      </option>
-          <option value="zh_cn"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="zh_cn"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        中文 – 简体
-      </option>
-          <option value="ja"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="ja"
-              track-name="changed"
-              track-type="languageSelector"
-            >
-        日本語
-      </option>
-          <option value="ko"
-              track-metadata-original-language="ko"
-              track-metadata-selected-language="ko"
-              track-name="changed"
-              track-type="languageSelector"
-                          selected="selected"
-            >
-        한국어
-      </option>
-        </select>
-  </devsite-select>
-</devsite-language-selector>
-
-  </nav>
-</div>
-                  </devsite-footer-utility>
-      </section></section>
-    <devsite-sitemask></devsite-sitemask>
-    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip ></devsite-tooltip>
-    <devsite-heading-link></devsite-heading-link>
-    <devsite-analytics>
-              <script type="application/json" analytics>[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Blockly", "dimension5": "ko", "dimension3": false, "dimension1": "Signed In", "dimension8": null}, "gaid": "UA-24532603-1"}]</script>
-<script type="application/json" gtm>{}</script>
-          </devsite-analytics>
+    <meta name="iframe" content="standalone">
             <script>
-    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
-    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
-    E.parentNode.insertBefore(t,E);})(window, document, 'script',
-    'https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/js/app_loader.js', '[1,"ko",null,"/js/devsite_app.js","https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc","https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/developers","https://developers-dot-devsite-v2-prod.appspot.com",1,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
-  </script>  </body>
+      (function(){
+        window.framebox=window.framebox||function(){(window.framebox.q=window.framebox.q||[]).push(arguments)};
+                var a={},b=function(){(window.framebox.dq=window.framebox.dq||[]).push(arguments)};
+        ['getUrl','handleLinkClicksInParent','initAutoSize','navigate','pushState','replaceState',
+         'requestQueryAndFragment','sendEvent','updateSize'].forEach(function(x){a[x]=function(){
+          b(x,arguments)}});
+        window.devsite={framebox:{AutoSizeClient:a}};
+      })();
+            (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+        t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+        E.parentNode.insertBefore(t,E);})(window, document, 'script',
+        'https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/js/app_loader.js', '[1,"en",null,"/js/devsite_app.js","https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc","https://www.gstatic.com/devrel-devsite/prod/v7edd884088d642c108fc8ea1bd75617f2dc0af2fd196f78fa8668ffffb81a7bc/developers","https://developers-dot-devsite-v2-prod.appspot.com",null,1,null,1]')
+            </script>
+      </head>
+    <body >
+    <!DOCTYPE html>
+<head>
+  <script src="https://blockly-demo.appspot.com/static/blockly_compressed.js"></script>
+  <script src="https://blockly-demo.appspot.com/static/blocks_compressed.js"></script>
+  <script src="https://blockly-demo.appspot.com/static/msg/js/en.js"></script>
+  <script src="https://blockly-demo.appspot.com/static/javascript_compressed.js"></script>
+  <script src="https://blockly-demo.appspot.com/static/python_compressed.js"></script>
+  <script src="https://blockly-demo.appspot.com/static/php_compressed.js"></script>
+  <script src="https://blockly-demo.appspot.com/static/lua_compressed.js"></script>
+  <script src="https://blockly-demo.appspot.com/static/dart_compressed.js"></script>
+  <script src="/blockly/blockly-demo/acorn_interpreter.js"></script>
+  <script src="https://developers.google.com/_static/js/prettify-bundle.js"></script>
+  <link href="https://developers.google.com/_static/css/devsite-cyan.css" rel="stylesheet"></script>
+  <link href="/blockly/styles/blockly-demo.css" rel="stylesheet">
+</head>
+<body>
+<div class="app-container">
+  <div id="blocklyDiv" class="main blockly-panel"></div>
+  <div id="codeDiv" class="main output-panel">
+    <div class="dropdown-bar">
+      Language:
+      <div id="im-just-an-underline">
+        <select id="languageDropdown" onChange="myUpdateFunction();">
+          <option value="JavaScript">JavaScript</option>
+          <option value="Python">Python</option>
+          <option value="PHP">PHP</option>
+          <option value="Lua">Lua</option>
+          <option value="Dart">Dart</option>
+        </select>
+      </div>
+    </div>
+    <hr class="POps">
+    <pre translate="no" dir="ltr"></pre>
+  </div>
+  <div id="playButton" class="play-button material-icons" translate="no">play_arrow</div>
+</div>
+<xml id="toolbox" style="display: none">
+    <category id="catLogic" colour="210" name="Logic">
+      <block type="controls_if"></block>
+      <block type="logic_compare"></block>
+      <block type="logic_operation"></block>
+      <block type="logic_negate"></block>
+      <block type="logic_boolean"></block>
+      <block type="logic_null"></block>
+      <block type="logic_ternary"></block>
+    </category>
+    <category id="catLoops" colour="120" name="Loops">
+      <block type="controls_repeat_ext">
+        <value name="TIMES">
+          <shadow type="math_number">
+            <field name="NUM">10</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="controls_whileUntil"></block>
+      <block type="controls_for">
+        <value name="FROM">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <value name="TO">
+          <shadow type="math_number">
+            <field name="NUM">10</field>
+          </shadow>
+        </value>
+        <value name="BY">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="controls_forEach"></block>
+      <block type="controls_flow_statements"></block>
+    </category>
+    <category id="catMath" colour="230" name="Math">
+      <block type="math_number"></block>
+      <block type="math_arithmetic">
+        <value name="A">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <value name="B">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_single">
+        <value name="NUM">
+          <shadow type="math_number">
+            <field name="NUM">9</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_trig">
+        <value name="NUM">
+          <shadow type="math_number">
+            <field name="NUM">45</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_constant"></block>
+      <block type="math_number_property">
+        <value name="NUMBER_TO_CHECK">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_change">
+        <value name="DELTA">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_round">
+        <value name="NUM">
+          <shadow type="math_number">
+            <field name="NUM">3.1</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_on_list"></block>
+      <block type="math_modulo">
+        <value name="DIVIDEND">
+          <shadow type="math_number">
+            <field name="NUM">64</field>
+          </shadow>
+        </value>
+        <value name="DIVISOR">
+          <shadow type="math_number">
+            <field name="NUM">10</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_constrain">
+        <value name="VALUE">
+          <shadow type="math_number">
+            <field name="NUM">50</field>
+          </shadow>
+        </value>
+        <value name="LOW">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <value name="HIGH">
+          <shadow type="math_number">
+            <field name="NUM">100</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_random_int">
+        <value name="FROM">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <value name="TO">
+          <shadow type="math_number">
+            <field name="NUM">100</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_random_float"></block>
+    </category>
+    <category id="catText" colour="160" name="Text">
+      <block type="text"></block>
+      <block type="text_join"></block>
+      <block type="text_append">
+        <value name="TEXT">
+          <shadow type="text"></shadow>
+        </value>
+      </block>
+      <block type="text_length">
+        <value name="VALUE">
+          <shadow type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="text_isEmpty">
+        <value name="VALUE">
+          <shadow type="text">
+            <field name="TEXT"></field>
+          </shadow>
+        </value>
+      </block>
+      <block type="text_indexOf">
+        <value name="VALUE">
+          <block type="variables_get">
+            <field name="VAR">text</field>
+          </block>
+        </value>
+        <value name="FIND">
+          <shadow type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="text_charAt">
+        <value name="VALUE">
+          <block type="variables_get">
+            <field name="VAR">text</field>
+          </block>
+        </value>
+      </block>
+      <block type="text_getSubstring">
+        <value name="STRING">
+          <block type="variables_get">
+            <field name="VAR">text</field>
+          </block>
+        </value>
+      </block>
+      <block type="text_changeCase">
+        <value name="TEXT">
+          <shadow type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="text_trim">
+        <value name="TEXT">
+          <shadow type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="text_print">
+        <value name="TEXT">
+          <shadow type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="text_prompt_ext">
+        <value name="TEXT">
+          <shadow type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>
+    </category>
+    <category id="catLists" colour="260" name="Lists">
+      <block type="lists_create_with">
+        <mutation items="0"></mutation>
+      </block>
+      <block type="lists_create_with"></block>
+      <block type="lists_repeat">
+        <value name="NUM">
+          <shadow type="math_number">
+            <field name="NUM">5</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="lists_length"></block>
+      <block type="lists_isEmpty"></block>
+      <block type="lists_indexOf">
+        <value name="VALUE">
+          <block type="variables_get">
+            <field name="VAR">list</field>
+          </block>
+        </value>
+      </block>
+      <block type="lists_getIndex">
+        <value name="VALUE">
+          <block type="variables_get">
+            <field name="VAR">list</field>
+          </block>
+        </value>
+      </block>
+      <block type="lists_setIndex">
+        <value name="LIST">
+          <block type="variables_get">
+            <field name="VAR">list</field>
+          </block>
+        </value>
+      </block>
+      <block type="lists_getSublist">
+        <value name="LIST">
+          <block type="variables_get">
+            <field name="VAR">list</field>
+          </block>
+        </value>
+      </block>
+      <block type="lists_split">
+        <value name="DELIM">
+          <shadow type="text">
+            <field name="TEXT">,</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="lists_sort"></block>
+    </category>
+    <category id="catColour" colour="20" name="Color">
+      <block type="colour_picker"></block>
+      <block type="colour_random"></block>
+      <block type="colour_rgb">
+        <value name="RED">
+          <shadow type="math_number">
+            <field name="NUM">100</field>
+          </shadow>
+        </value>
+        <value name="GREEN">
+          <shadow type="math_number">
+            <field name="NUM">50</field>
+          </shadow>
+        </value>
+        <value name="BLUE">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="colour_blend">
+        <value name="COLOUR1">
+          <shadow type="colour_picker">
+            <field name="COLOUR">#ff0000</field>
+          </shadow>
+        </value>
+        <value name="COLOUR2">
+          <shadow type="colour_picker">
+            <field name="COLOUR">#3333ff</field>
+          </shadow>
+        </value>
+        <value name="RATIO">
+          <shadow type="math_number">
+            <field name="NUM">0.5</field>
+          </shadow>
+        </value>
+      </block>
+    </category>
+    <sep></sep>
+    <category id="catVariables" colour="330" custom="VARIABLE" name="Variables"></category>
+    <category id="catFunctions" colour="290" custom="PROCEDURE" name="Functions"></category>
+  </xml>
+<xml id="blocklyDefault" style="display: none">
+  <block type="variables_set">
+    <field name="VAR">Count</field>
+    <value name="VALUE">
+      <block type="math_number">
+        <field name="NUM">1</field>
+      </block>
+    </value>
+    <next>
+    <block type="controls_whileUntil" x="16" y="16">
+      <field name="MODE">WHILE</field>
+        <value name="BOOL">
+          <block type="logic_compare">
+            <field name="OP">LTE</field>
+            <value name="A">
+              <block type="variables_get">
+                <field name="VAR">Count</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number">
+                <field name="NUM">3</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="text_print">
+            <value name="TEXT">
+              <block type="text">
+                <field name="TEXT">Hello World!</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set">
+              <field name="VAR">Count</field>
+                <value name="VALUE">
+                  <block type="math_arithmetic">
+                  <field name="OP">ADD</field>
+                    <value name="A">
+                      <block type="variables_get">
+                        <field name="VAR">Count</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </block>
+</xml>
+<script>
+  var workspace = Blockly.inject('blocklyDiv',
+      {toolbox: document.getElementById('toolbox')});
+  var defaultBlocks = document.getElementById('blocklyDefault');
+  Blockly.Xml.domToWorkspace(defaultBlocks, workspace);
+  function myUpdateFunction(event) {
+    var languageDropdown = document.getElementById('languageDropdown');
+    var languageSelection = languageDropdown.options[languageDropdown.selectedIndex].value;
+    var codeDiv = document.getElementById('codeDiv');
+    var codeHolder = document.createElement('pre');
+    codeHolder.className = 'prettyprint but-not-that-pretty';
+    var code = document.createTextNode(Blockly[languageSelection].workspaceToCode(workspace));
+    codeHolder.appendChild(code);
+    codeDiv.replaceChild(codeHolder, codeDiv.lastElementChild);
+    prettyPrint();
+  }
+  workspace.addChangeListener(myUpdateFunction);
+  function executeBlockCode() {
+    var code = Blockly.JavaScript.workspaceToCode(workspace);
+    var initFunc = function(interpreter, scope) {
+      var alertWrapper = function(text) {
+        text = text ? text.toString() : '';
+        return interpreter.createPrimitive(alert(text));
+      };
+      interpreter.setProperty(scope, 'alert',
+          interpreter.createNativeFunction(alertWrapper));
+      var promptWrapper = function(text) {
+        text = text ? text.toString() : '';
+        return interpreter.createPrimitive(prompt(text));
+      };
+      interpreter.setProperty(scope, 'prompt',
+          interpreter.createNativeFunction(promptWrapper));
+    };
+    var myInterpreter = new Interpreter(code, initFunc);
+    var stepsAllowed = 10000;
+    while (myInterpreter.step() && stepsAllowed) {
+      stepsAllowed--;
+    }
+    if (!stepsAllowed) {
+      throw EvalError('Infinite loop.');
+    }
+  }
+  
+  document.getElementById('playButton').addEventListener('click', executeBlockCode);
+</script>
+</body>
+  </body>
 </html>
